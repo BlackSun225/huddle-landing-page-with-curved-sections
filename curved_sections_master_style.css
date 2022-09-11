@@ -1,0 +1,552 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3{
+  font-family: "Poppins", serif;
+  color: hsl(192, 100%, 9%);
+}
+a{
+  text-decoration: none;
+}
+header, footer{
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em; 
+}
+nav{
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img, nav a{
+  display: inline-block;
+}
+nav img{
+  width: 8em;
+}
+nav a{
+  padding: 0.5em 1.8em;
+  color: hsl(322, 100%, 66%);
+  border: 2px solid hsl(322, 100%, 66%);
+  border-radius: 1.5em;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+nav a:hover{
+  opacity: 50%;
+}
+header .text{
+  width: 90%;
+  margin: 3.5em auto; 
+}
+header .text h1{
+  text-align: center;
+  font-size: 1.8em;
+}
+header .text p{
+  font-family: "Open Sans", sans-serif;
+  color: hsl(192, 100%, 9%);
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 85%;
+  line-height: 1.5em;
+}
+header .text a{
+  display: block;
+  color: whitesmoke;
+  background: hsl(322, 100%, 66%);
+  width: 220px;
+  padding: 1em 0;
+  border-radius: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-align: center;
+  margin: 2em auto;
+  box-shadow: 0 3px 6px hsl(215, 8%, 72%);
+}
+header .text a:hover{
+  opacity: 70%;
+}
+header .illustration{
+  width: 90%;
+  margin: 3.5em auto;
+}
+.illustration img{
+  width: 100%;
+}
+header .dataone img{
+  display: block;
+  width: 2em;
+}
+header .dataone div{
+  font-size: 4em;
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+header .dataone p{
+  font-size: 1em;
+}
+header .data p, header .dataone p{
+  font-family: "Open Sans", serif;
+  color: hsl(192, 100%, 9%);
+  opacity: 75%;
+}
+header .data img{
+  width: 2em;
+}
+header .data div{
+  font-size: 3.85em;
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;  
+}
+header .data p{
+  font-size: 1em;
+}
+main .steps p{
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 75%;
+  line-height: 1.7em;
+}
+main .steps h2{
+  font-size: 1.4em;
+}
+main .top, main .bottom{
+  background: hsl(207, 100%, 98%);
+}
+h3{
+  font-size: 1.65em;
+  text-align: center;
+}
+main section a{
+  display: block;
+  color: whitesmoke;
+  background: hsl(322, 100%, 66%);
+  width: 220px;
+  padding: 1em 0;
+  border-radius: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-align: center;
+  margin: 2em auto;
+  box-shadow: 0 3px 6px hsl(215, 8%, 72%);    
+}
+main section a:hover{
+  opacity: 70%;
+}
+footer{
+  background: hsl(192, 100%, 9%);
+  color: rgba(245, 245, 245, 95%);
+  font-family: "Open Sans";
+}
+footer .subscribe h4{
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+footer .subscribe p{
+  line-height: 1.7em;
+}
+footer .subscribe input{
+  display: block; 
+  width: 100%;
+  height: 3.85em;
+  border: none;
+  border-radius: 0.5em;
+}
+footer .subscribe input:hover{
+  border: 2px solid hsl(0, 100%, 63%);
+}
+footer .subscribe button{
+  display: block;
+  width: 50%;
+  padding: 0.7em 0;
+  color: rgba(245, 245, 245, 95%);
+  background: hsl(322, 100%, 66%);
+  border-radius: 0.25em;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 50%;
+}
+footer .subscribe button:hover{
+  opacity: 70%;
+}
+footer p{
+  font-size: 1em;
+}
+footer .contact .line img{
+  width: 1.5em;
+  margin: 0;
+  margin-right: 2em;
+}
+footer .contact .line{
+  position: relative;
+  height: 3em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;  
+}
+footer .contact .social i{
+  margin-right: 1em;
+  font-size: 2em;
+}
+footer .contact .social i:hover{
+  color: dodgerblue;
+}
+
+@media only screen and (max-width:600px) {
+  header .text h1{
+    margin: 1em auto;
+  }
+  header .text p{
+    margin-bottom: 3em;
+  }
+  header .illustration{
+    margin: 8em auto;
+  }
+  header .number{
+    width: 50%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .number p{
+    text-align: center;
+  }
+  header .number .dataone, header .number .data{
+    margin: 3em auto;
+  }
+  header {
+    background: url('images/bg-section-top-mobile-1.svg') no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 4em;
+  }
+  main .text{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  main .illustration{
+    padding: 4em;
+  }
+  main .text h2, main .text p{
+    text-align: center;
+    margin: 1em 0;
+  }
+  main .top{
+    padding-bottom: 2em;
+  }
+  main .middle{
+    background: url('images/bg-section-bottom-mobile-1.svg') no-repeat top, url('images/bg-section-top-mobile-2.svg') no-repeat bottom;
+    background-size: contain;
+    padding-top: 7em;
+    padding-bottom: 13em;
+  }
+  main .bottom{
+    padding-bottom: 5em;
+  }
+  main section{
+    background: url('images/bg-section-bottom-mobile-2.svg') no-repeat top, url('images/bg-footer-top-mobile.svg') no-repeat bottom;
+    background-size: contain;
+    padding-top: 12em;
+    padding-bottom: 12em;
+  }
+  footer{
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  footer .subscribe p{
+    margin: 2em auto;
+  }
+  footer .subscribe input, footer .subscribe button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  footer .subscribe input{
+    height: 3.85em;
+    border: none;
+    border-radius: 0.5em;
+  }
+  footer .subscribe button{
+    color: rgba(245, 245, 245, 95%);
+    background: hsl(322, 100%, 66%);
+    border-radius: 0.25em;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  footer .contact{
+    margin-top: 6em;
+  }
+  footer .contact img{
+    margin-bottom: 1em;
+  }
+  footer .contact p{
+    margin-bottom: 3em;
+  }
+  footer .contact .social{
+    margin-top: 2.5em;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+  body{
+    width: 600px;
+    margin: 0 auto;
+  }
+  header .text h1{
+    margin: 1em auto;
+  }
+  header .text p{
+    margin-bottom: 3em;
+  }
+  header .illustration{
+    margin: 8em auto;
+  }
+  header .number{
+    width: 50%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .number p{
+    text-align: center;
+  }
+  header .number .dataone, header .number .data{
+    margin: 3em auto;
+  }
+  header {
+    background: url('images/bg-section-top-mobile-1.svg') no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 4em;
+  }
+  main .text{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  main .illustration{
+    padding: 4em;
+  }
+  main .text h2, main .text p{
+    text-align: center;
+    margin: 1em 0;
+  }
+  main .top{
+    padding-bottom: 2em;
+  }
+  main .middle{
+    background: url('images/bg-section-bottom-mobile-1.svg') no-repeat top, url('images/bg-section-top-mobile-2.svg') no-repeat bottom;
+    background-size: contain;
+    padding-top: 7em;
+    padding-bottom: 13em;
+  }
+  main .bottom{
+    padding-bottom: 5em;
+  }
+  main section{
+    background: url('images/bg-section-bottom-mobile-2.svg') no-repeat top, url('images/bg-footer-top-mobile.svg') no-repeat bottom;
+    background-size: contain;
+    padding-top: 12em;
+    padding-bottom: 12em;
+  }
+  footer{
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  footer .subscribe p{
+    margin: 2em auto;
+  }
+  footer .subscribe input, footer .subscribe button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  footer .subscribe input{
+    display: block; 
+    width: 100%;
+    height: 3.85em;
+    border: none;
+    border-radius: 0.5em;
+  }
+  footer .subscribe button{
+    display: block;
+    width: 50%;
+    padding: 0.7em 0;
+    color: rgba(245, 245, 245, 95%);
+    background: hsl(322, 100%, 66%);
+    border-radius: 0.25em;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 50%;
+  }
+  footer .contact{
+    margin-top: 6em;
+  }
+  footer .contact img{
+    margin-bottom: 1em;
+  }
+  footer .contact p{
+    margin-bottom: 3em;
+  }
+  footer .contact .social{
+    margin-top: 2.5em;
+  }  
+}
+
+@media only screen and (min-width:901px) {
+  header .text h1{
+    margin: 1em auto;
+  }
+  header .text p{
+    margin-bottom: 3em;
+  }
+  header .illustration{
+    margin: 8em auto;
+  }
+  header .number{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .number .dataone, header .number .data{
+    width: 30%;
+  }
+  header .number .dataone{
+    margin-left: 6%;
+  }
+  header .number .data{
+    margin-right: -8%;
+  }
+  header{
+    background: url('images/bg-section-top-desktop-1.svg') no-repeat bottom;
+    background-size: contain;
+    padding-bottom: 150px;
+  }
+  main .top, main .bottom{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+  }
+  main .top .text, main .bottom .text{
+    width: 40%;
+    margin-left: 4em;
+  }
+  main .top .illustration, main .bottom .illustration{
+    width: 35%;
+    margin-right: 4em;
+  }
+  main .middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12em 0;    
+  }
+  main .middle .text{
+    width: 40%;
+    margin-right: 4em;    
+  }
+  main .middle .illustration{
+    width: 35%;
+    margin-left: 4em;
+  }
+  main .steps h2{
+    margin-bottom: 1em;
+  }
+  main .middle{
+    background: url("images/bg-section-bottom-desktop-1.svg") no-repeat top, url('images/bg-section-top-desktop-2.svg') no-repeat bottom;
+    background-size: contain;
+  }
+  main section{
+    background: url('images/bg-section-bottom-desktop-2.svg') no-repeat top, url('images/bg-footer-top-desktop.svg') no-repeat bottom;
+    background-size: contain;
+    padding: 14em 0;
+  }
+  footer{
+    padding: 4em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  footer .subscribe{
+    width: 50%;
+  }
+  footer .contact{
+    width: 310px;
+  }
+  footer .subscribe h4{
+    margin:0.8em 0;
+  }
+  footer .subscribe p{
+    line-height: 1.4em;
+    margin: 1em 0;
+    width: 65%;
+    opacity: 95%;
+  }
+  footer .subscribe form{
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 2em 0;
+  }
+  footer .subscribe input{
+    all: unset;
+    display: block;
+    background: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 0.8em 0;
+    width: 60%;
+  }
+  footer .subscribe button{
+    all: unset;
+    display: block;
+    width: 30%;
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: rgba(245, 245, 245, 95%);
+    background: hsl(322, 100%, 66%);
+    padding: 0.8em 0;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+  }
+  footer .contact img{
+    margin-bottom: 1em;
+  }
+  footer .contact p{
+    line-height: 1.4em;
+    margin-bottom: 1em;
+  }
+  footer .contact .social{
+    margin-top: 2em;
+  }
+}
